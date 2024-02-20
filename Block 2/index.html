@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Concepts Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        /* Navigation Bar */
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 10px;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+        }
+
+        /* Main Content Section */
+        .main-content {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .main-content h2 {
+            margin-bottom: 30px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            height: 200px; /* Set the height of all card images */
+            object-fit: cover; /* Ensure the images cover the entire space */
+        }
+
+        .card-body {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">92 Doner Kebab</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="view.php">View</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="add.php">Add</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="delete.php">Delete</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="update.php">Update</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="todo.php">To-Do List</a>
+                    </li>
+                </ul>
+                <!-- Admin actions -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin_dashboard.php">Admin Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="container">
+            <h1>Welcome to 92 Donner Kings</h1>
+            <p>Explore the world of goods and foods!</p>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="row">
+                <!-- Column 1: Chips -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/chips.jpg" alt="Chips">
+                        <div class="card-body">
+                            <h5 class="card-title">Chips</h5>
+                            <p class="card-text">Delicious crispy chips.</p>
+                            <a href="#" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 2: Donner -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/donner.jpg" alt="Donner">
+                        <div class="card-body">
+                            <h5 class="card-title">Donner</h5>
+                            <p class="card-text">Tender and flavorful donner kebab.</p>
+                            <a href="#" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 3: Wraps -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/wraps.jpg" alt="Wraps">
+                        <div class="card-body">
+                            <h5 class="card-title">Wraps</h5>
+                            <p class="card-text">Freshly made wraps with various fillings.</p>
+                            <a href="#" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <!-- Column 1: Burgers -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/burgers.jpg" alt="Burgers">
+                        <div class="card-body">
+                            <h5 class="card-title">Burgers</h5>
+                            <p class="card-text">Juicy and mouthwatering burgers.</p>
+                            <a href="#" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 2: Garlic Bread -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/garlic_bread.jpg" alt="Garlic Bread">
+                        <div class="card-body">
+                            <h5 class="card-title">Garlic Bread</h5>
+                            <p class="card-text">Freshly baked garlic bread.</p>
+                            <a href="#" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 3: Other Take Away Foods -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/onion.jpg" alt="Take Away Foods">
+                        <div class="card-body">
+                            <h5 class="card-title">Onion Rings</h5>
+                            <p class="card-text">Freshly cooked onion rings.</p>
+                            <a href="#" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 92 Donner Kings!</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
