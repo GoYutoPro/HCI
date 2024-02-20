@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>92 Doner Kebab</title>
+    <link rel="stylesheet"href="../admin/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="../public/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.php" data-lang-en="92 Doner Kebab" data-lang-es="92 Doner Kebab" data-lang-fr="92 Doner Kebab">92 Doner Kebab</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/staff/index.html" data-lang-en="Home" data-lang-es="Inicio" data-lang-fr="Accueil">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/staff/view.php" data-lang-en="View" data-lang-es="Ver" data-lang-fr="Vue">View</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/staff/add.php" data-lang-en="Add" data-lang-es="Añadir" data-lang-fr="Ajouter">Add</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/staff/contact.php" data-lang-en="Contact Us" data-lang-es="Contacto" data-lang-fr="Contactez-nous">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/staff/login.php" data-lang-en="Logout" data-lang-es="cerrar sesion" data-lang-fr="Se déconnecter">Logout</a>
+                    </li>
+                </ul>
+                <!-- User Icon and Text -->
+                <div class="nav-item d-flex align-items-center">
+                    <span class="mr-2">
+                        <i class="fas fa-user"></i> <!-- Font Awesome user icon -->
+                    </span>
+                    <span class="text-white">STAFF</span>
+                </div>
+                <!-- Language Dropdown -->
+                <div class="dropdown language-dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <button class="dropdown-item" type="button" onclick="changeLanguage('en')">English</button>
+                        <button class="dropdown-item" type="button" onclick="changeLanguage('es')">Español</button>
+                        <button class="dropdown-item" type="button" onclick="changeLanguage('fr')">Français</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="container">
+            <h1 data-lang="Welcome to 92 Donner Kings" data-lang-en="Welcome to 92 Donner Kings"
+                data-lang-es="Bienvenido a 92 Donner Kings" data-lang-fr="Bienvenue chez 92 Donner Kings">Welcome to
+                92 Donner Kings</h1>
+            <p data-lang="Explore the world of goods and foods!" data-lang-en="Explore the world of goods and foods!"
+                data-lang-es="¡Explora el mundo de bienes y alimentos!"
+                data-lang-fr="Explorez le monde des biens et des aliments!">Explore the world of goods and foods!</p>
+            <!-- Language Change Button -->
+            <div>
+                <button class="btn btn-secondary" onclick="changeLanguage('en')">English</button>
+                <button class="btn btn-secondary" onclick="changeLanguage('es')">Spanish</button>
+                <button class="btn btn-secondary" onclick="changeLanguage('fr')">French</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content" id="services">
+        <div class="container">
+            <h2 data-lang="Our Services" data-lang-en="Our Services" data-lang-es="Nuestros Servicios"
+                data-lang-fr="Nos Services">Our Services</h2>
+            <div class="row">
+                <!-- Column 1: Chips -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/chips.jpg" alt="Chips">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="Chips" data-lang-en="Chips" data-lang-es="Papas fritas"
+                                data-lang-fr="Chips">Chips</h5>
+                            <p class="card-text" data-lang="Delicious crispy chips."
+                                data-lang-en="Delicious crispy chips." data-lang-es="Deliciosas papas fritas crujientes."
+                                data-lang-fr="Délicieuses chips croustillantes.">Delicious crispy chips.</p>
+                            <a href="#" class="btn btn-primary" data-lang="Order Now" data-lang-en="Order Now"
+                                data-lang-es="Ordenar Ahora" data-lang-fr="Commander maintenant">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 2: Donner -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/donner.jpg" alt="Donner">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="Donner" data-lang-en="Donner" data-lang-es="Doner"
+                                data-lang-fr="Donner">Donner</h5>
+                            <p class="card-text" data-lang="Tender and flavorful donner kebab."
+                                data-lang-en="Tender and flavorful donner kebab."
+                                data-lang-es="Tierno y sabroso kebab de doner."
+                                data-lang-fr="Donner tendre et savoureux.">Tender and flavorful donner kebab.</p>
+                            <a href="#" class="btn btn-primary" data-lang="Order Now" data-lang-en="Order Now"
+                                data-lang-es="Ordenar Ahora" data-lang-fr="Commander maintenant">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 3: Wraps -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/wraps.jpg" alt="Wraps">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="Wraps" data-lang-en="Wraps" data-lang-es="Envolturas"
+                                data-lang-fr="Emballages">Wraps</h5>
+                            <p class="card-text" data-lang="Freshly made wraps with various fillings."
+                                data-lang-en="Freshly made wraps with various fillings."
+                                data-lang-es="Envolturas recién hechas con varios rellenos."
+                                data-lang-fr="Emballages fraîchement préparés avec différents garnitures.">Freshly made
+                                wraps with various fillings.</p>
+                            <a href="#" class="btn btn-primary" data-lang="Order Now" data-lang-en="Order Now"
+                                data-lang-es="Ordenar Ahora" data-lang-fr="Commander maintenant">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <!-- Column 1: Burgers -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/burgers.jpg" alt="Burgers">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="Burgers" data-lang-en="Burgers" data-lang-es="Hamburguesas"
+                                data-lang-fr="Burgers">Burgers</h5>
+                            <p class="card-text" data-lang="Juicy and mouthwatering burgers."
+                                data-lang-en="Juicy and mouthwatering burgers."
+                                data-lang-es="Hamburguesas jugosas y apetitosas."
+                                data-lang-fr="Burgers juteux et appétissants.">Juicy and mouthwatering burgers.</p>
+                            <a href="#" class="btn btn-primary" data-lang="Order Now" data-lang-en="Order Now"
+                                data-lang-es="Ordenar Ahora" data-lang-fr="Commander maintenant">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 2: Garlic Bread -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/garlic_bread.jpg" alt="Garlic Bread">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="Garlic Bread" data-lang-en="Garlic Bread"
+                                data-lang-es="Pan de ajo" data-lang-fr="Pain à l'ail">Garlic Bread</h5>
+                            <p class="card-text" data-lang="Freshly baked garlic bread."
+                                data-lang-en="Freshly baked garlic bread."
+                                data-lang-es="Pan de ajo recién horneado."
+                                data-lang-fr="Pain à l'ail fraîchement cuit.">Freshly baked garlic bread.</p>
+                            <a href="#" class="btn btn-primary" data-lang="Order Now" data-lang-en="Order Now"
+                                data-lang-es="Ordenar Ahora" data-lang-fr="Commander maintenant">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 3: Other Take Away Foods -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/onion.jpg" alt="Take Away Foods">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="Onion Rings" data-lang-en="Onion Rings"
+                                data-lang-es="Aros de cebolla" data-lang-fr="Rondelles d'oignon">Onion Rings</h5>
+                            <p class="card-text" data-lang="Freshly cooked onion rings."
+                                data-lang-en="Freshly cooked onion rings."
+                                data-lang-es="Aros de cebolla recién cocidos."
+                                data-lang-fr="Rondelles d'oignon fraîchement cuites.">Freshly cooked onion rings.</p>
+                            <a href="#" class="btn btn-primary" data-lang="Order Now" data-lang-en="Order Now"
+                                data-lang-es="Ordenar Ahora" data-lang-fr="Commander maintenant">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p data-lang="&copy; 92 Donner Kings!" data-lang-en="&copy; 92 Donner Kings!"
+                data-lang-es="&copy; 92 Donner Kings!" data-lang-fr="&copy; 92 Donner Kings!">&copy; 92 Donner Kings!</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function changeLanguage(language) {
+            var elements = document.querySelectorAll('[data-lang]');
+            elements.forEach(function (element) {
+                element.innerHTML = element.getAttribute('data-lang-' + language);
+            });
+        }
+    </script>
+</body>
+
+</html>

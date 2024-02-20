@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>92 Doner Kebab</title>
+    <link rel="stylesheet" href="../admin/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="../public/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-image: url("../images/Designer\ \(1\).png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; 
+        }
+
+        /* Style for the welcome message */
+        .welcome-message {
+            background-color: rgba(255, 255, 255, 0.7); /* Light background color with some transparency */
+            padding: 20px; /* Add padding for better readability */
+            border-radius: 10px; /* Optional: Add rounded corners */
+        }
+        .welcome-message2 {
+            background-color: rgba(255, 255, 255, 0.7); /* Light background color with some transparency */
+            padding: 5px; /* Add padding for better readability */
+            border-radius: 2px; /* Optional: Add rounded corners */
+        }
+    </style>
+</head>
+<body> 
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/block 2/staff/index.html" data-lang-en="92 Doner Kebab" data-lang-es="92 Doner Kebab" data-lang-fr="92 Doner Kebab">92 Doner Kebab</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/public/home.html" data-lang-en="Home" data-lang-es="Inicio" data-lang-fr="Accueil">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../staff/contact.php" data-lang-en="Contact Us" data-lang-es="Contacto" data-lang-fr="Contactez-nous">Contact Us</a>
+                    </li>
+                </ul>
+                <!-- Language Dropdown -->
+                <div class="dropdown language-dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <button class="dropdown-item" type="button" onclick="changeLanguage('en')">English</button>
+                        <button class="dropdown-item" type="button" onclick="changeLanguage('es')">Español</button>
+                        <button class="dropdown-item" type="button" onclick="changeLanguage('fr')">Français</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h2 class="text-center welcome-message" data-lang-en="Welcome to 92 Doner Kebab Shop!" data-lang-es="¡Bienvenido a 92 Doner Kebab Shop!" data-lang-fr="Bienvenue chez 92 Doner Kebab Shop!">Welcome to 92 Doner Kebab Shop!</h2>
+        <p class="text-center welcome-message2" data-lang-en="Please choose an option below to log in:" data-lang-es="Por favor, elija una opción a continuación para iniciar sesión:" data-lang-fr="Veuillez choisir une option ci-dessous pour vous connecter:">Please choose an option below to log in:</p>
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center">
+                <a href="../staff/login.php" class="btn btn-primary btn-lg btn-block">Staff</a>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="../admin/login.php" class="btn btn-primary btn-lg btn-block">Admin</a>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <!-- Zoom In and Out Buttons -->
+    <button class="btn btn-info mr-2" onclick="zoomIn()">Zoom In</button>
+    <button class="btn btn-info" onclick="zoomOut()">Zoom Out</button>
+
+    <!-- Color-Blind Settings Button -->
+    <button class="btn btn-secondary mr-2" onclick="toggleColorBlindMode()">Color-Blind Mode</button>
+
+    <!-- Text-to-Speech Button -->
+    <button class="btn btn-primary" onclick="speakText('Welcome to 92 Doner Kebab Shop!')">Text-to-Speech</button>
+</footer>
+</html>

@@ -1,0 +1,269 @@
+.navbar {
+    background-color: #343a40; /* Dark background color */
+    padding: 10px; /* Adjust padding */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff; /* Text color */
+}
+
+.navbar-toggler {
+    border: 1px solid #ffffff; /* Border color */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Toggler icon color */
+}
+
+.navbar-nav { 
+    margin: auto;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px; /* Adjust margin */
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+}
+
+.language-dropdown {
+    margin-left: auto; /* Align dropdown to the right */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer button {
+    margin: 5px;
+}
+
+/* Adjust body height to accommodate footer */
+body {
+    margin-bottom: 80px; /* Height of the footer */
+    position: relative;
+    min-height: 100vh;
+}
+
+.color-blind-mode .navbar {
+    background-color: #007bff; /* Change to blue background color */
+}
+
+.color-blind-mode .navbar-brand {
+    color: #ffffff; /* White text color */
+}
+
+.color-blind-mode .navbar-toggler-icon {
+    background-color: #ffffff; /* White icon color */
+}
+
+.color-blind-mode .navbar-nav .nav-link {
+    color: #ffffff; /* White link color */
+}
+
+.color-blind-mode footer {
+    background-color: #007bff; /* Change to blue footer background color */
+    color: #ffffff; /* White footer text color */
+}
+.container_del {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 200px;
+}
+
+.delete-form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.delete-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.delete-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+/* Adjust the language dropdown button */
+.dropdown-toggle.language-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.update_form {
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex; /* Change to flex to use align-items and justify-content */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Align elements vertically */
+    margin: auto;
+    width: 750px;
+    max-width: 1250px;
+    margin-top: 50px;
+}
+.update_form input[type="text"],
+.update_form input[type="number"] {
+    margin-bottom: 2px; /* Reduce the margin between input fields */
+    padding: 4px; /* Reduce the padding for less spacing within the input fields */
+}
+
+#feedbackForm1 {
+    width: 1100px; /* Adjust width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust font size and line height for larger form */
+#feedbackForm1 input[type="text"],
+#feedbackForm1 input[type="email"],
+#feedbackForm1 textarea {
+    font-size: 16px;
+    line-height: 1.5;   
+}
+
+form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.adding_form {
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex; /* Change to flex to use align-items and justify-content */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Align elements vertically */
+    margin: auto;
+    width: 750px;
+    max-width: 1250px;
+    margin-top: 50px;
+}
+
+.adding_form input[type="text"],
+.adding_form input[type="number"] {
+    margin-bottom: 4px; /* Reduce the margin between input fields */
+    padding: 4px; /* Reduce the padding for less spacing within the input fields */
+}
+
+ /* Card Styles */
+ .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 200px; /* Set the height of all card images */
+    object-fit: cover; /* Ensure the images cover the entire space */
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+        /* Main Content Section */
+        .main-content {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .main-content h2 {
+            margin-bottom: 30px;
+        }
+
+ /* Header Section */
+ .header {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+  /* Style for the on-screen keyboard */
+  #keyboard {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+  }
+
+  .key {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+  }
